@@ -19,7 +19,7 @@ class RealCountController extends Controller
             ->where('Status', 'RealCount')
             ->get();
         // return $hasilSuara;
-        return view('RealCount.Index', [
+        return view('RealCount.index', [
             "hasilSuara" => $hasilSuara,
             'kecamatan' => \App\Models\Kecamatan::all(),
             'kelurahan' => \App\Models\Kelurahan::all(),
