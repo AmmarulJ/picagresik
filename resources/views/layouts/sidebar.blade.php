@@ -19,11 +19,13 @@
               <a class="list-group-item list-group-item-action list-group-item-light p-3" id="userActive"
                   href="{{ route('user.userShowAll') }}">Users</a>
           @endif
-          <p style="background-image: url('/IMG_7110.png');">
+          <p style="background-image: url('{{ asset('IMG_7110.png') }}');">
       </div>
   </div>
 <style>
 p {
-  background-image: url('/IMG_7110.png');
+  background-image: url('{{ asset('IMG_7110.png') }}');
+   background-size: cover; /* Menyesuaikan gambar dengan elemen */
+    background-position: center; /* Menempatkan gambar di tengah */
 }
 </style>
