@@ -19,13 +19,15 @@
               <a class="list-group-item list-group-item-action list-group-item-light p-3" id="userActive"
                   href="{{ route('user.userShowAll') }}">Users</a>
           @endif
-          <p style="background-image: url('{{ asset('/public/build/assets/IMG_7110.png') }}');">
+          
       </div>
   </div>
 <style>
-p {
-  background-image: url('{{ asset('build/assets/IMG_7110.png') }}');
-   background-size: cover; /* Menyesuaikan gambar dengan elemen */
-    background-position: center; /* Menempatkan gambar di tengah */
-}
+    #sidebar-wrapper {
+        background-image: url('{{ asset('build/assets/IMG_7110.png') }}'); /* Menentukan gambar background */
+        background-size: cover;  /* Menyesuaikan gambar dengan ukuran elemen */
+        background-position: center;  /* Menempatkan gambar di tengah */
+        background-repeat: no-repeat;  /* Menghindari gambar terulang */
+        height: 100vh;  /* Pastikan sidebar mengisi tinggi layar */
+    }
 </style>
