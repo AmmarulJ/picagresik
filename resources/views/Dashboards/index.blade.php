@@ -20,7 +20,6 @@
         <hr>
         <div class="container">
             <p class="fs-5">
-                <span class="fw-bold">Gresik</span><br>
                 Metode : Stratified Cluster Random Sampling<br>
                 Sample : 400 TPS dari 1868 TPS se Kabupaten Gresik<br>
                 Tingkat Kepercayaan: 95 persen<br>
@@ -43,7 +42,7 @@
             <div class="row">
                 <div class="col mt-3">
                     <div class="card h-100">
-                        <div class="card-header text-center h-75 bg-success text-light fs-6">
+                        <div class="card-header text-center h-75 bg-danger text-light fs-6">
                             Quick Count: Fandi Akhmad Yani - Asluchul Alif
 
                         </div>
@@ -69,7 +68,7 @@
 
                 <div class="col mt-3">
                     <div class="card h-100">
-                        <div class="card-header text-center h-75 bg-warning text-light fs-6">
+                        <div class="card-header text-center h-75 bg-secondary text-light fs-6">
                             Total Jumlah Suara Tidak Sah
                         </div>
                         <div class="card-body">
@@ -80,7 +79,7 @@
                 </div>
                 <div class="col mt-3">
                     <div class="card  h-100">
-                        <div class="card-header text-center h-75 bg-secondary text-light fs-6">
+                        <div class="card-header text-center h-75 bg-warning text-light fs-6">
                             Total Jumlah Suara
                         </div>
                         <div class="card-body">
@@ -106,7 +105,7 @@
             <div class="row mb-3">
                 <div class="col mt-3">
                     <div class="card h-100">
-                        <div class="card-header text-center h-75 bg-success text-light fs-6">
+                        <div class="card-header text-center h-75 bg-danger text-light fs-6">
                             Real Count: Fandi Akhmad Yani - Asluchul Alif
 
                         </div>
@@ -133,7 +132,7 @@
 
                 <div class="col mt-3">
                     <div class="card h-100">
-                        <div class="card-header text-center h-75 bg-warning text-light fs-6">
+                        <div class="card-header text-center h-75 bg-secondary text-light fs-6">
                             Total Jumlah Suara Tidak Sah
                         </div>
                         <div class="card-body">
@@ -144,7 +143,7 @@
                 </div>
                 <div class="col mt-3">
                     <div class="card h-100">
-                        <div class="card-header text-center h-75 bg-secondary text-light fs-6">
+                        <div class="card-header text-center h-75 bg-warning text-light fs-6">
                             Total Jumlah Suara
                         </div>
                         <div class="card-body">
@@ -195,7 +194,7 @@
             },
             xaxis: {
                 categories: [
-                    'Paslon 1',
+                    'Fandi Akhmad Yani - Asluchul Alif',
                     'Kotak Kosong',
                     'Suara Tidak Sah'
                 ],
@@ -214,7 +213,7 @@
                     }
                 }
             },
-            colors: ['#28A745', '#007BFF', '#FFC107'], // Hijau, Biru, Kuning
+            colors: ['#FF0000', '#007BFF', '#777777'], // Merah, Biru, Kuning
             title: {
                 text: 'Hasil Quick Count',
                 align: 'center',
@@ -262,7 +261,7 @@
             },
             xaxis: {
                 categories: [
-                    'Paslon 1',
+                    'Fandi Akhmad Yani - Asluchul Alif',
                     'Kotak Kosong',
                     'Suara Tidak Sah'
                 ],
@@ -281,7 +280,7 @@
                     }
                 }
             },
-            colors: ['#43A047', '#FB8C00', '#D81B60'], // Warna berbeda untuk setiap kategori
+            colors: ['#FF0000', '#007BFF', '#777777'], // Warna berbeda untuk setiap kategori
             title: {
                 text: 'Hasil Real Count',
                 align: 'center',
@@ -315,7 +314,7 @@
                 height: 500
             },
             series: [{
-                    name: 'Paslon 1',
+                    name: 'Fandi Akhmad Yani - Asluchul Alif',
                     data: paslon1Data
                 },
                 {
@@ -367,7 +366,7 @@
                 }
             },
             series: [{
-                    name: 'Paslon 1',
+                    name: 'Fandi Akhmad Yani - Asluchul Alif',
                     data: paslon1Data
                 },
                 {
@@ -391,7 +390,7 @@
                     fontWeight: 'bold'
                 }
             },
-            colors: ['#00E396', '#008FFB', '#FEB019'],
+            colors: ['#FF0000', '#007BFF', '#777777'],
             legend: {
                 position: 'top',
                 horizontalAlign: 'center',

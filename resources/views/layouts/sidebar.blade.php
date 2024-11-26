@@ -19,5 +19,6 @@
               <a class="list-group-item list-group-item-action list-group-item-light p-3" id="userActive"
                   href="{{ route('user.userShowAll') }}">Users</a>
           @endif
+          <p style="background-image: url('/IMG_7110.png');">
       </div>
   </div>
