@@ -18,7 +18,7 @@ class QuickCountController extends Controller
             ->where('Status', 'QuickCount')
             ->get();
 
-        return view('QuickCount.index', [
+        return view('QuickCount.Index', [
             "hasilSuara" => $hasilSuara,
             'kecamatan' => \App\Models\Kecamatan::all(),
             'kelurahan' => \App\Models\Kelurahan::all(),
