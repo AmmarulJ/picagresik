@@ -59,6 +59,8 @@
             <thead class="border">
                 <tr>
                     <th class="text-center border">No</th>
+                    <th class="text-center border">Kecamatan</th>
+                    <th class="text-center border">Kelurahan</th>
                     <th class="text-center border">No TPS</th>
                     <th class="text-center border">Paslon1 : Fandi Akhmad Yani - Asluchul Alif</th>
                     <th class="text-center border">Kotak Kosong</th>
@@ -73,8 +75,9 @@
                 @foreach ($hasilSuara as $item)
                     <tr>
                         <td class="text-center border">{{ $loop->iteration }}</td>
-                        <td>Kecamatan{{ $item->Tps->kelurahan->kecamatan->nama }}-Kelurahan{{ $item->Tps->kelurahan->nama }}-TPS{{ $item->Tps->nama }}
-                        </td>
+                        <td class="text-center border">{{ $item->Tps->kelurahan->kecamatan->nama }}</td>
+                        <td class="text-center border">{{ $item->Tps->kelurahan->nama }}</td>
+                        <td class="text-center border">{{ $item->Tps->nama }}</td>
                         <td class="text-center border">{{ $item->paslon1 }}</td>
                         <td class="text-center border">{{ $item->kotak_kosong }}</td>
                         <td class="text-center border">{{ $item->suara_tidak_sah }}</td>
