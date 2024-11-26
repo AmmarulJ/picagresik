@@ -154,14 +154,7 @@
                 </div>
             </div>
         </div>
-<p style="background-image: url('{{ asset('IMG_7110.png') }}');">
-<style>
-p {
-  background-image: url('{{ asset('IMG_7110.png') }}');
-   background-size: cover; /* Menyesuaikan gambar dengan elemen */
-    background-position: center; /* Menempatkan gambar di tengah */
-}
-</style>
+            
     </div>
 
     <script>
