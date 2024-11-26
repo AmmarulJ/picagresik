@@ -22,3 +22,8 @@
           <p style="background-image: url('/IMG_7110.png');">
       </div>
   </div>
+<style>
+p {
+  background-image: url('/IMG_7110.png');
+}
+</style>

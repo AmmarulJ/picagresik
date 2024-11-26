@@ -333,7 +333,7 @@
                 text: 'Total Suara per Kecamatan (Quick Count)',
                 align: 'center'
             },
-            colors: ['#00E396', '#008FFB', '#FEB019'],
+            colors: ['#FF0000', '#007BFF', '#777777'],
             legend: {
                 position: 'top'
             },
