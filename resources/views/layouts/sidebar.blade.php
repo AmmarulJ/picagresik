@@ -9,10 +9,12 @@
       <div class="list-group list-group-flush">
           <a class="list-group-item list-group-item-action list-group-item-light p-3" id="dashboardsActive"
               href="/">Dashboard</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" id="QuickActive"
-              href="{{ route('QuickCount.showQuickCount') }}">Quick Count</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" id="RealActive"
-              href="{{ route('RealCount.showRealCount') }}">Real Count</a>
+          @if (Auth::user()->role == 'superadmin' || Auth::user()->role == 'Admin')
+              <a class="list-group-item list-group-item-action list-group-item-light p-3" id="QuickActive"
+                  href="{{ route('QuickCount.showQuickCount') }}">Quick Count</a>
+              <a class="list-group-item list-group-item-action list-group-item-light p-3" id="RealActive"
+                  href="{{ route('RealCount.showRealCount') }}">Real Count</a>
+          @endif
           @if (Auth::user()->role == 'superadmin')
               <a class="list-group-item list-group-item-action list-group-item-light p-3" id="userActive"
                   href="{{ route('user.userShowAll') }}">Users</a>

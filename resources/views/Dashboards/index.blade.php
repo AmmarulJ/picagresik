@@ -18,60 +18,74 @@
             </div>
         </div>
         <hr>
+        <div class="container">
+            <p class="fs-5">
+                <span class="fw-bold">Gresik</span><br>
+                Metode : Stratified Cluster Random Sampling<br>
+                Sample : 400 TPS dari 1868 TPS se Kabupaten Gresik<br>
+                Tingkat Kepercayaan: 95 persen<br>
+                Margin of Error : 4 persen<br>
+            </p>
+        </div>
+        <hr>
         <div class="row">
             <h2 class="mb-3">Quick Count</h2>
-            <div class="col">
-                <div id="quickCountChart" style="width: 100%; height: 400px;"></div>
-                <hr>
-                <div id="quickCountBarChart" style="width: 100%; height: 400px;"></div>
+            <div class="row">
+                <div class="col">
+                    <div id="quickCountChart" style="width: 100%; height: 400px;"></div>
+                </div>
+                <div class="col">
 
+                    <div id="quickCountBarChart" style="width: 100%; height: 400px;"></div>
+                </div>
             </div>
-            <div class="col">
+            <hr>
+            <div class="row">
                 <div class="col mt-3">
-                    <div class="card">
-                        <div class="card-header bg-success text-light fs-3">
+                    <div class="card h-100">
+                        <div class="card-header text-center h-75 bg-success text-light fs-6">
                             Quick Count: Fandi Akhmad Yani - Asluchul Alif
 
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <p class="card-text">{{ $totalQuickCountPaslon1 }}</p>
+                            <p class="card-text text-center fs-6">{{ $totalQuickCountPaslon1 }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col mt-3">
-                    <div class="card">
-                        <div class="card-header bg-primary text-light fs-3">
+                    <div class="card h-100">
+                        <div class="card-header text-center h-75 bg-primary text-light fs-6">
                             Quick Count : Kotak Kosong
 
 
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <p class="card-text">{{ $totalQuickCountKotakKosong }}</p>
+                            <p class="card-text text-center fs-6">{{ $totalQuickCountKotakKosong }}</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col mt-3">
-                    <div class="card">
-                        <div class="card-header bg-warning text-light fs-3">
+                    <div class="card h-100">
+                        <div class="card-header text-center h-75 bg-warning text-light fs-6">
                             Total Jumlah Suara Tidak Sah
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <p class="card-text">{{ $totalQuickCountTidakSah }}</p>
+                            <p class="card-text text-center fs-6">{{ $totalQuickCountTidakSah }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col mt-3">
-                    <div class="card">
-                        <div class="card-header bg-secondary text-light fs-3">
+                    <div class="card  h-100">
+                        <div class="card-header text-center h-75 bg-secondary text-light fs-6">
                             Total Jumlah Suara
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <p class="card-text">{{ $totalQuickCount }}</p>
+                            <p class="card-text text-center fs-6">{{ $totalQuickCount }}</p>
                         </div>
                     </div>
                 </div>
@@ -80,58 +94,62 @@
         <hr>
         <div class="row">
             <h2 class="mb-3">Real Count</h2>
-            <div class="col">
-                <div id="realCountChart" style="width: 100%; height: 400px; margin-top: 50px;"></div>
-                <hr>
-                <div id="realCountBarChart" style="width: 100%; height: 400px;"></div>
+            <div class="row">
+                <div class="col">
+                    <div id="realCountChart" style="width: 100%; height: 400px;"></div>
+                </div>
+                <div class="col">
+                    <div id="realCountBarChart" style="width: 100%; height: 400px;"></div>
+
+                </div>
             </div>
-            <div class="col">
+            <div class="row mb-3">
                 <div class="col mt-3">
-                    <div class="card">
-                        <div class="card-header bg-primary text-light fs-3">
+                    <div class="card h-100">
+                        <div class="card-header text-center h-75 bg-success text-light fs-6">
                             Real Count: Fandi Akhmad Yani - Asluchul Alif
 
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <p class="card-text">{{ $totalRealCountPaslon1 }}</p>
+                            <p class="card-text text-center fs-6">{{ $totalRealCountPaslon1 }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col mt-3">
-                    <div class="card">
-                        <div class="card-header bg-success text-light fs-3">
+                    <div class="card h-100">
+                        <div class="card-header text-center h-75 bg-primary text-light fs-6">
                             Real Count: Kotak Kosong
 
 
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <p class="card-text">{{ $totalRealCountKosong }}</p>
+                            <p class="card-text text-center fs-6">{{ $totalRealCountKosong }}</p>
                         </div>
                     </div>
                 </div>
 
 
                 <div class="col mt-3">
-                    <div class="card">
-                        <div class="card-header bg-warning text-light fs-3">
+                    <div class="card h-100">
+                        <div class="card-header text-center h-75 bg-warning text-light fs-6">
                             Total Jumlah Suara Tidak Sah
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <p class="card-text">{{ $totalRealCountTidakSah }}</p>
+                            <p class="card-text text-center fs-6">{{ $totalRealCountTidakSah }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col mt-3">
-                    <div class="card">
-                        <div class="card-header bg-secondary text-light fs-3">
+                    <div class="card h-100">
+                        <div class="card-header text-center h-75 bg-secondary text-light fs-6">
                             Total Jumlah Suara
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"></h5>
-                            <p class="card-text">{{ $totalRealCount }}</p>
+                            <p class="card-text text-center fs-6">{{ $totalRealCount }}</p>
                         </div>
                     </div>
                 </div>
@@ -147,72 +165,154 @@
         });
     </script>
     <script>
-        // Data untuk Quick Count
         var quickCountOptions = {
-            series: [
-                {{ $totalQuickCountPaslon1 }},
-                {{ $totalQuickCountKotakKosong }},
-                {{ $totalQuickCountTidakSah }}
-            ],
+            series: [{
+                name: 'Suara',
+                data: [
+                    {{ $totalQuickCountPaslon1 }},
+                    {{ $totalQuickCountKotakKosong }},
+                    {{ $totalQuickCountTidakSah }}
+                ]
+            }],
             chart: {
-                type: 'pie',
-                height: 400
+                type: 'bar',
+                height: 400,
+                toolbar: {
+                    show: true
+                }
             },
-            labels: [
-                'Paslon 1',
-                'Kotak Kosong',
-                'Suara Tidak Sah'
-            ],
+            plotOptions: {
+                bar: {
+                    horizontal: true, // Horizontal Bar Chart
+                    barHeight: '50%'
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function(val) {
+                    return val; // Menampilkan nilai
+                }
+            },
+            xaxis: {
+                categories: [
+                    'Paslon 1',
+                    'Kotak Kosong',
+                    'Suara Tidak Sah'
+                ],
+                title: {
+                    text: 'Jumlah Suara',
+                    style: {
+                        fontSize: '14px'
+                    }
+                }
+            },
+            yaxis: {
+                title: {
+                    text: 'Kategori',
+                    style: {
+                        fontSize: '14px'
+                    }
+                }
+            },
+            colors: ['#28A745', '#007BFF', '#FFC107'], // Hijau, Biru, Kuning
             title: {
                 text: 'Hasil Quick Count',
-                align: 'center'
+                align: 'center',
+                style: {
+                    fontSize: '18px',
+                    fontWeight: 'bold'
+                }
             },
-            colors: ['#00E396', '#008FFB', '#FEB019'],
+            grid: {
+                borderColor: '#f1f1f1'
+            }
         };
 
-        // Render Quick Count Chart
+        // Render Chart
         var quickCountChart = new ApexCharts(document.querySelector("#quickCountChart"), quickCountOptions);
         quickCountChart.render();
-
         // Data untuk Real Count
         var realCountOptions = {
-            series: [
-                {{ $totalRealCountPaslon1 }},
-                {{ $totalRealCountKosong }},
-                {{ $totalRealCountTidakSah }}
-            ],
+            series: [{
+                name: 'Suara',
+                data: [
+                    {{ $totalRealCountPaslon1 }},
+                    {{ $totalRealCountKosong }},
+                    {{ $totalRealCountTidakSah }}
+                ]
+            }],
             chart: {
-                type: 'pie',
-                height: 400
+                type: 'bar',
+                height: 400,
+                toolbar: {
+                    show: true
+                }
             },
-            labels: [
-                'Paslon 1',
-                'Kotak Kosong',
-                'Suara Tidak Sah'
-            ],
+            plotOptions: {
+                bar: {
+                    horizontal: true, // Horizontal Bar Chart
+                    barHeight: '50%'
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function(val) {
+                    return val; // Menampilkan nilai
+                }
+            },
+            xaxis: {
+                categories: [
+                    'Paslon 1',
+                    'Kotak Kosong',
+                    'Suara Tidak Sah'
+                ],
+                title: {
+                    text: 'Jumlah Suara',
+                    style: {
+                        fontSize: '14px'
+                    }
+                }
+            },
+            yaxis: {
+                title: {
+                    text: 'Kategori',
+                    style: {
+                        fontSize: '14px'
+                    }
+                }
+            },
+            colors: ['#43A047', '#FB8C00', '#D81B60'], // Warna berbeda untuk setiap kategori
             title: {
                 text: 'Hasil Real Count',
-                align: 'center'
+                align: 'center',
+                style: {
+                    fontSize: '18px',
+                    fontWeight: 'bold'
+                }
             },
-            colors: ['#00E396', '#008FFB', '#FEB019'],
+            grid: {
+                borderColor: '#f1f1f1'
+            }
         };
 
         // Render Real Count Chart
         var realCountChart = new ApexCharts(document.querySelector("#realCountChart"), realCountOptions);
         realCountChart.render();
     </script>
+
+
     <script>
         // Data Kelurahan dan Total Suara
         var kelurahanLabels = @json($totalQuickCountPerTps->keys()); // Nama kelurahan
         var paslon1Data = @json($totalQuickCountPerTps->pluck('total_paslon1'));
         var paslon2Data = @json($totalQuickCountPerTps->pluck('kotak_kosong'));
-        var paslon3Data = @json($totalQuickCountPerTps->pluck('suara_tidak_sah'));
+        var paslon3Data = @json($totalQuickCountPerTps->pluck('total_tidak_sah'));
 
         // Konfigurasi ApexCharts
         var options = {
             chart: {
                 type: 'bar',
-                height: 400
+                height: 500
             },
             series: [{
                     name: 'Paslon 1',
@@ -240,7 +340,7 @@
             },
             plotOptions: {
                 bar: {
-                    horizontal: false,
+                    horizontal: true,
                     columnWidth: '55%'
                 }
             }
@@ -253,15 +353,15 @@
     <script>
         // Data Kelurahan dan Total Suara
         var kelurahanLabels = @json($totalRealCountPerTps->keys() ?? []); // Nama kelurahan
-        var paslon1Data = @json($totalQuickCountPerTps->pluck('total_paslon1'));
-        var paslon2Data = @json($totalQuickCountPerTps->pluck('kotak_kosong'));
-        var paslon3Data = @json($totalQuickCountPerTps->pluck('suara_tidak_sah'));
+        var paslon1Data = @json($totalRealCountPerTps->pluck('total_paslon1'));
+        var paslon2Data = @json($totalRealCountPerTps->pluck('kotak_kosong'));
+        var paslon3Data = @json($totalRealCountPerTps->pluck('total_tidak_sah'));
 
         // Konfigurasi ApexCharts
         var options = {
             chart: {
                 type: 'bar',
-                height: 400,
+                height: 500,
                 toolbar: {
                     show: true // Menampilkan toolbar untuk unduh grafik
                 }
@@ -281,23 +381,10 @@
             ],
             xaxis: {
                 categories: kelurahanLabels,
-                title: {
-                    text: 'Kelurahan',
-                    style: {
-                        fontSize: '14px'
-                    }
-                }
             },
-            yaxis: {
-                title: {
-                    text: 'Jumlah Suara',
-                    style: {
-                        fontSize: '14px'
-                    }
-                }
-            },
+
             title: {
-                text: 'Total Suara per Kecamatan (Quick Count)',
+                text: 'Total Suara per Kecamatan (Real Count)',
                 align: 'center',
                 style: {
                     fontSize: '18px',
@@ -312,7 +399,7 @@
             },
             plotOptions: {
                 bar: {
-                    horizontal: false,
+                    horizontal: true,
                     columnWidth: '55%'
                 }
             },

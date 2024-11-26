@@ -59,7 +59,7 @@
 
             <div class="mb-3">
                 <label for="tps" class="form-label">TPS:</label>
-                <select name="tps" class="form-control" id="tps">
+                <select name="tps" class="form-control dropdownSelect" id="tps">
                     <option value="">Pilih TPS</option>
                     @foreach ($tps as $item)
                         <option value="{{ $item->id }}">
@@ -98,7 +98,7 @@
         $(document).ready(function() {
             document.title = "Quick Count - PICA";
             $("#QuickActive").addClass('active')
-
+            $('.dropdownSelect').select2();
             //bug search
             $(window).keydown(function(event) {
                 if (event.keyCode == 13) {
