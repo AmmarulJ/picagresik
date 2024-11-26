@@ -231,7 +231,7 @@
                 categories: kelurahanLabels
             },
             title: {
-                text: 'Total Suara per Kelurahan (Quick Count)',
+                text: 'Total Suara per Kecamatan (Quick Count)',
                 align: 'center'
             },
             colors: ['#00E396', '#008FFB', '#FEB019'],
@@ -297,7 +297,7 @@
                 }
             },
             title: {
-                text: 'Total Suara per Kelurahan (Quick Count)',
+                text: 'Total Suara per Kecamatan (Quick Count)',
                 align: 'center',
                 style: {
                     fontSize: '18px',
