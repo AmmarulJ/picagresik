@@ -22,12 +22,3 @@
           
       </div>
   </div>
-  <style>
-    #sidebar-wrapper {
-        background-image: url('{{ asset('build/assets/IMG_7110.png') }}'); /* Menentukan gambar background */
-        background-size: cover;  /* Menyesuaikan gambar dengan ukuran elemen */
-        background-position: top left;  /* Menempatkan gambar di pojok kiri atas */
-        background-repeat: no-repeat;  /* Menghindari gambar terulang */
-        height: 100vh;  /* Pastikan sidebar mengisi tinggi layar */
-    }
-</style>

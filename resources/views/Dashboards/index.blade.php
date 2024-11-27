@@ -247,7 +247,7 @@
             },
             xaxis: {
                 categories: [
-                    'Fandi Akhmad Yani - Asluchul Alif',
+                    'Gus Yani - Dr. Alif',
                     'Kotak Kosong',
                     'Suara Tidak Sah'
                 ],
