@@ -21,6 +21,9 @@ class DashboardController extends Controller
         $totalRealCountTidakSah = HasilSuara::where('Status', "RealCount")->sum("suara_tidak_sah");
         $totalRealCount = $totalRealCountTidakSah + $totalRealCountKosong + $totalRealCountPaslon1;
 
+        $totalTpsMasuk = HasilSuara::where('Status', "QuickCount")->get()->count();
+        $totalSuaraMaksimal = 400; // Total suara maksimal
+        $persentaseSuara = ($totalTpsMasuk / $totalSuaraMaksimal) * 100;
 
         $totalQuickCountPerTps = Kecamatan::with('kelurahan.tps.hasilSuara')
             ->get()
@@ -59,6 +62,9 @@ class DashboardController extends Controller
             "totalRealCount" => $totalRealCount,
             "totalQuickCountPerTps" => $totalQuickCountPerTps,
             "totalRealCountPerTps" => $totalRealCountPerTps,
+            "totalTpsMasuk" => $totalTpsMasuk,
+            "totalSuaraMaksimal" => $totalSuaraMaksimal,
+            "persentaseSuara" => $persentaseSuara
         ]);
     }
 }

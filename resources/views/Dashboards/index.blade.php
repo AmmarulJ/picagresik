@@ -28,7 +28,14 @@
         </div>
         <hr>
         <div class="row">
-            <h2 class="mb-3">Quick Count</h2>
+            <h2 class="mb-4">Quick Count</h2>
+            <div class="container">
+                <div class="row">
+                    <label class="fs-5">Progres Suara dari 400 TPS</label>
+                    <div id="progressBarChart"></div>
+                </div>
+            </div>
+            <hr>
             <div class="row">
                 <div class="col">
                     <div id="quickCountChart" style="width: 100%; height: 400px;"></div>
@@ -154,13 +161,59 @@
                 </div>
             </div>
         </div>
-            
+
     </div>
 
     <script>
         $(document).ready(function() {
             document.title = "Dashboard - PICA";
             $("#dashboardsActive").addClass('active')
+        });
+    </script>
+    <script script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var totalSuara = {{ $totalTpsMasuk }};
+            var persentase = {{ $persentaseSuara }};
+
+            var options = {
+                series: [{
+                    data: [persentase] // Data persen untuk progres
+                }],
+                chart: {
+                    type: 'bar', // Tipe chart batang
+                    height: 100 // Tinggi chart
+                },
+                plotOptions: {
+                    bar: {
+                        horizontal: true, // Batang horizontal
+                        barHeight: '50%', // Tinggi batang
+                        dataLabels: {
+                            position: 'top' // Label di atas batang
+                        }
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    formatter: function(val) {
+                        return val + '%'; // Tampilkan persentase
+                    },
+                    offsetX: 10, // Jarak label ke batang
+                    style: {
+                        fontSize: '14px',
+                        colors: ['#000'] // Warna label
+                    }
+                },
+                xaxis: {
+                    categories: ['Progres Suara '], // Kategori pada sumbu x
+                    max: 100 // Maksimal persen
+                },
+                fill: {
+                    colors: ['#28A745'] // Warna batang
+                }
+            };
+
+            var chart = new ApexCharts(document.querySelector("#progressBarChart"), options);
+            chart.render();
         });
     </script>
     <script>
