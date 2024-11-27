@@ -54,8 +54,8 @@
 
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text text-center fs-6">{{ $totalQuickCountPaslon1 }}</p>
+                                                    <p class="card-text text-center fs-6">{{ number_format($persentaseQuickCountPaslon1, 2) }}%</p>
+
                         </div>
                     </div>
                 </div>
@@ -67,8 +67,8 @@
 
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text text-center fs-6">{{ $totalQuickCountKotakKosong }}</p>
+                                                    <p class="card-text text-center fs-6">{{ number_format($persentaseQuickCountKotakKosong, 2) }}%</p>
+
                         </div>
                     </div>
                 </div>
@@ -79,19 +79,19 @@
                             Total Jumlah Suara Tidak Sah
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text text-center fs-6">{{ $totalQuickCountTidakSah }}</p>
+                                                    <p class="card-text text-center fs-6"> {{ number_format($persentaseQuickCountTidakSah, 2) }}%</p>
+
                         </div>
                     </div>
                 </div>
                 <div class="col mt-3">
                     <div class="card  h-100">
                         <div class="card-header text-center h-75 bg-warning text-light fs-6">
-                            Total Jumlah Suara
+                            Total Suara Masuk
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text text-center fs-6">{{ $totalQuickCount }}</p>
+                                                    <p class="card-text text-center fs-6">{{ $totalQuickCount }} suara</p>
+
                         </div>
                     </div>
                 </div>
@@ -117,8 +117,8 @@
 
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text text-center fs-6">{{ $totalRealCountPaslon1 }}</p>
+                                                    <p class="card-text text-center fs-6">{{ $totalRealCountPaslon1 }}</p>
+
                         </div>
                     </div>
                 </div>
@@ -130,8 +130,8 @@
 
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text text-center fs-6">{{ $totalRealCountKosong }}</p>
+                                                    <p class="card-text text-center fs-6">{{ $totalRealCountKosong }}</p>
+
                         </div>
                     </div>
                 </div>
@@ -143,8 +143,8 @@
                             Total Jumlah Suara Tidak Sah
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text text-center fs-6">{{ $totalRealCountTidakSah }}</p>
+                                                    <p class="card-text text-center fs-6">{{ $totalRealCountTidakSah }}</p>
+
                         </div>
                     </div>
                 </div>
